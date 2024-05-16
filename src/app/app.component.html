@@ -1,0 +1,25 @@
+<label for="">Name : </label>
+<input type="text" id="names" />
+<br />
+<br />
+<label for="">Company : </label>
+<input type="text" id="company" />
+
+<br />
+<br />
+<div class="flex">
+  <button class="fi" (click)="submitData()">Submit</button>
+  <button class="fi" (click)="fetchData()">Fetch</button>
+  <button class="fi" (click)="deletePost()">Delete</button>
+</div>
+
+<br />
+<hr />
+<h2>POSTS</h2>
+
+<ul>
+  <li *ngFor="let i of resuls">
+    <h3>Name - {{ i.name }}</h3>
+    <p>Company - {{ i.company }}</p>
+  </li>
+</ul>

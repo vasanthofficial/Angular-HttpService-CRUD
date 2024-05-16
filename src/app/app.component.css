@@ -1,0 +1,12 @@
+p {
+  font-family: Lato;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+.fi{
+  margin-left: 10px;
+}
